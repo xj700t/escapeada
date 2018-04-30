@@ -201,12 +201,12 @@
 
             var activeTimer = false;
 
-            var enemyMatrix = [
-                [-2, -3],
-                [2.2, 2],
-                [-2, 2.5],
-                [-2, -2]
-            ]
+var enemyMatrix = [
+			[-1.5, -2],
+			[1.65, 1.5],
+			[-1.5, 2],
+			[-1.5, -1.5]
+		]
             var gameNum = 0;
             var stats = []
 
@@ -365,12 +365,12 @@
                 allowIntersect = true;
                 allowDrag = true;
 
-                enemyMatrix = [
-                    [-2, -3],
-                    [2.2, 2],
-                    [-2, 2.5],
-                    [-2, -2]
-                ]
+                 enemyMatrix = [
+			[-1.5, -2],
+			[1.65, 1.5],
+			[-1.5, 2],
+			[-1.5, -1.5]
+		]
                 speedMultiplier = 1;
 
 
