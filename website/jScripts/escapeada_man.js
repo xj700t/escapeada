@@ -251,7 +251,6 @@ function getMCSymbolPrototype(symbol, nominalBounds, frameBounds) {
 			var abs = Math.abs(volumeMultiplier)
 			var smoothStop2 = 1- Math.pow(1-abs,2)
 			createjs.Sound.volume = 1 * volumeMultiplier* smoothStop2;
-			console.log(1 * volumeMultiplier* smoothStop2)
 		}
 		
 		function GAME() {
