@@ -19,9 +19,9 @@ function myFunction() {
         var myFormForward = document.getElementById("myFormForward");
         myFormForward.classList.remove("hidden");
 
-        document.getElementById("identifier").value=identifier;
-        document.getElementById("totalGames").value=totalGames;
-        document.getElementById("gameStats").value = resultsText;
+        document.getElementById("userID").value = identifier;
+        document.getElementById("numberOfGames").value = totalGames;
+        document.getElementById("stats").value = resultsText;
     });
 
     

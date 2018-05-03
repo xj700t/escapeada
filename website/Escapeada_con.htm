@@ -129,85 +129,81 @@ function playSound(id, loop) {
                     <input id="Button1" type="button" class="btn btn-default center-block" value="שמור תוצאות" onclick="myFunction()" />
                 </div>
                 <hr />
-                <section id="myFormForward" class="text-center hidden">
-                    <h2>עוד קצת וסיימנו... </h2>
-                    <p> מלאו את הטופס ולחצו על הכפתור בסיום.</p>
-                </section>
+                
 
 
                 <form id="myForm" class="hidden">
                     <input type="hidden" id="myEmail" value="xjguyt+escapeada@gmail.com" />
 
-                    <div class="hidden">
-                        <div class="form-group">
-                            <label for="gameVersion">גרסת משחק</label>
-                            <input class="form-control" id="version" type="hidden" value="בקרה" />
-                        </div>
-                        <div class="form-group">
-                            <label for="userID">מזהה משתמש</label>
-                            <input class="form-control" id="identifier" type="hidden" />
-                        </div>
-                        <div  class="form-group">
-                            <label for="numberOfGames">מספר משחקים</label>
-                            <input class="form-control" id="totalGames" type="hidden" />
-                        </div>
-                        <div  class="form-group">
-                            <label for="stats">תוצאות</label>
-                            <input class="form-control" id="gameStats" type="hidden" />
-                        </div>
-        </div>
+                    
+                            <label class="row center-block text-center" for="gameVersion">
+                                גרסת משחק
+                                <input class="col-xs-12" type="text" id="gameVersion" value="escapeada_con" disabled />
+                            </label>
+                    <label class="row center-block text-center" for="userID">
+                        מזהה משתמש
+                        <input class="col-xs-12" type="text"  id="userID"  disabled/>
+                    </label>
 
-                    <div class="form-group col-xs-6">
-                        <label class="control-label">
-                            מין
-                        </label>
-                        <br />
+                    <label class="row center-block text-center" for="numberOfGames">
+                        מספר משחקים
+                        <input class="col-xs-12" type="text"  id="numberOfGames"disabled />
+                    </label>
+                    
+                    <label class="row center-block text-center" for="stats">
+                        תוצאות
+                        <input class="col-xs-12" type="text"  id="stats"disabled />
+                    </label>
+                    <hr />
+                    <section id="myFormForward" class="hidden text-center">
+                        <h2 >עוד קצת וסיימנו... </h2>
+                        <p> מלאו את הטופס ולחצו על הכפתור בסיום.</p>
+                    </section>
 
-                        <label class="radio-inline">
+                    <label class="form-horizontal">
+                        מין
+                    </label>
+
+                        <label for="male" class="radio-inline">
                             <input type="radio" name="gender" id="male" tabindex="1">
                             זכר
                         </label>
-                        <label class="radio-inline">
+                        <label for="female" class="radio-inline">
                             <input type="radio" name="gender" id="female" tabindex="2">
                             נקבה
                         </label>
-                    </div>
 
-                    <div class="form-group col-xs-6">
-                        <label>
+                        <label for="age">
                             גיל
+                            <select  id="age" tabindex="3">
+                                <option value="18" selected>18</option>
+                                <option value="19">19</option>
+                                <option value="20">20</option>
+                                <option value="21">21</option>
+                                <option value="22">22</option>
+                                <option value="23">23</option>
+                                <option value="24">24</option>
+                                <option value="25">25</option>
+                                <option value="26">26</option>
+                                <option value="27">27</option>
+                                <option value="28">28</option>
+                                <option value="29">29</option>
+                                <option value="30">30</option>
+                                <option value="31">31</option>
+                                <option value="32">32</option>
+                                <option value="33">33</option>
+                                <option value="34">34</option>
+                                <option value="35">35</option>
+                                <option value="36">36</option>
+                                <option value="37">37</option>
+                                <option value="38">38</option>
+                                <option value="39">39</option>
+                                <option value="40">40</option>
+                            </select>
                         </label>
-                        <select class="form-control" tabindex="3">
-                            <option value="18" selected>18</option>
-                            <option value="19">19</option>
-                            <option value="20">20</option>
-                            <option value="21">21</option>
-                            <option value="22">22</option>
-                            <option value="23">23</option>
-                            <option value="24">24</option>
-                            <option value="25">25</option>
-                            <option value="26">26</option>
-                            <option value="27">27</option>
-                            <option value="28">28</option>
-                            <option value="29">29</option>
-                            <option value="30">30</option>
-                            <option value="31">31</option>
-                            <option value="32">32</option>
-                            <option value="33">33</option>
-                            <option value="34">34</option>
-                            <option value="35">35</option>
-                            <option value="36">36</option>
-                            <option value="37">37</option>
-                            <option value="38">38</option>
-                            <option value="39">39</option>
-                            <option value="40">40</option>
-                        </select>
-                    </div>   
-			<label for="FirstName">
-                שם פרטי:
-                <input type="text" id="FirstName" placeholder="הכנס את שמך הפרטי" />
-            </label>
                     <div class="row">
+                        <br />
+
                         <input type="submit" class="btn btn-primary col-xs-3" value="שגר טופס" />
 
 

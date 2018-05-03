@@ -246,8 +246,8 @@ function getMCSymbolPrototype(symbol, nominalBounds, frameBounds) {
 			var distance2 = Math.min(Math.sqrt(Math.pow(home.player.x - parts[0][0].x, 2) + Math.pow(home.player.y - parts[0][0].y, 2)), Math.sqrt(Math.pow(home.player.x - parts[0][1].x, 2) + Math.pow(home.player.y - parts[0][1].y, 2)), Math.sqrt(Math.pow(home.player.x - parts[0][2].x, 2) + Math.pow(home.player.y - parts[0][2].y, 2)), Math.sqrt(Math.pow(home.player.x - parts[0][3].x, 2) + Math.pow(home.player.y - parts[0][3].y, 2)))
 			var distance3 = Math.min(Math.sqrt(Math.pow(home.player.x - parts[1][0].x, 2) + Math.pow(home.player.y - parts[1][0].y, 2)), Math.sqrt(Math.pow(home.player.x - parts[1][1].x, 2) + Math.pow(home.player.y - parts[1][1].y, 2)), Math.sqrt(Math.pow(home.player.x - parts[1][2].x, 2) + Math.pow(home.player.y - parts[1][2].y, 2)))
 		
-			//same trick as above- the closest (most dangerous) enemy sets the volume with ALGEBRA AGAIN- linear equation of y=ax+b that maxes volume at a range of ~60px and shuts off at ~150px
-			volumeMultiplier = Math.min(distance0, distance1, distance2, distance3) * (-0.01) + 1.42
+			//same trick as above- the closest (most dangerous) enemy sets the volume with ALGEBRA AGAIN- linear equation of y=ax+b that maxes volume at a range of ~80px and shuts off at ~150px
+			volumeMultiplier = Math.min(distance0, distance1, distance2, distance3) * (-0.014) + 2.14
 			var abs = Math.abs(volumeMultiplier)
 			var smoothStop2 = 1- Math.pow(1-abs,2)
 			createjs.Sound.volume = 1 * volumeMultiplier* smoothStop2;
