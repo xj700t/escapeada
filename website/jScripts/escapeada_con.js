@@ -344,7 +344,12 @@ var enemyMatrix = [
 
                 window.sessionStorage.setItem("totalGames", gameNum)
                 window.sessionStorage.setItem("results", stats)
-
+		
+		    //test here
+		if(stats.length>5){
+		stgae.alpha=0;
+		}
+		else{
                 home.player.alpha = 1;
                 home.player.x = 249
                 home.player.y = 253.95
@@ -373,7 +378,7 @@ var enemyMatrix = [
 		]
                 speedMultiplier = 1;
 
-
+		}
             }
 
             function intersect(obj1, obj2) {
