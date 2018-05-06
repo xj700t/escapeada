@@ -347,6 +347,7 @@ var enemyMatrix = [
 		
 		    //test here
 		if(stats.length>5){
+		console.log("game over");
 		stgae.alpha=0;
 		}
 		else{
