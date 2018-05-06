@@ -250,7 +250,7 @@ function getMCSymbolPrototype(symbol, nominalBounds, frameBounds) {
 			volumeMultiplier = Math.min(distance0, distance1, distance2, distance3) * (-0.014) + 2.14
 			var abs = Math.abs(volumeMultiplier)
 			var smoothStop2 = 1- Math.pow(1-abs,2)
-			if (stats.length<5){
+			if (stats.length<5|| stats==[]){
 			createjs.Sound.volume = 1 * volumeMultiplier* smoothStop2;
 			}
 			else{
