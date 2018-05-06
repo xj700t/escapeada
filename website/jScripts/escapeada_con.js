@@ -346,8 +346,7 @@ var enemyMatrix = [
                 window.sessionStorage.setItem("results", stats)
 		
 		    //test here
-		if(stats.length>5){
-		console.log("game over");
+		if(stats.length>=5){
 			
 		home.player.alpha = 0;
                 home.enemy0.alpha=0;
@@ -356,8 +355,8 @@ var enemyMatrix = [
                 home.enemy3.alpha=0;
 		
 		var fl_TF = new createjs.Text("שמור תוצאות כעת");
-		fl_TF.x = 200;
-		fl_TF.y = 100;
+		fl_TF.x = 190;
+		fl_TF.y = 200;
 		fl_TF.color = "#ff7700";
 		fl_TF.font = "20px Arial";
 		home.addChild(fl_TF);
