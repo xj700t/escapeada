@@ -20,7 +20,6 @@ function myFunction() {
         myFormForward.classList.remove("hidden");
 
         document.getElementById("userID").value = identifier;
-        document.getElementById("numberOfGames").value = totalGames;
         document.getElementById("stats").value = resultsText;
     });
 
