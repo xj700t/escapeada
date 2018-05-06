@@ -348,8 +348,22 @@ var enemyMatrix = [
 		    //test here
 		if(stats.length>5){
 		console.log("game over");
-		stgae.alpha=0;
+			
+		home.player.alpha = 0;
+                home.enemy0.alpha=0;
+                home.enemy1.alpha=0;
+                home.enemy2.alpha=0;
+                home.enemy3.alpha=0;
+		
+		var fl_TF = new createjs.Text("שמור תוצאות כעת");
+		fl_TF.x = 200;
+		fl_TF.y = 100;
+		fl_TF.color = "#ff7700";
+		fl_TF.font = "20px Arial";
+		home.addChild(fl_TF);
+			
 		}
+		    
 		else{
                 home.player.alpha = 1;
                 home.player.x = 249
