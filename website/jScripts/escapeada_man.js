@@ -231,7 +231,7 @@ function getMCSymbolPrototype(symbol, nominalBounds, frameBounds) {
 		
 		
 		
-		setInterval(checkVolume, 30)
+		var myInterval = setInterval(checkVolume, 30)
 		function checkVolume() {
 			//8TH GRADE ALGEBRA YOU GUYS - distance between two points equals sqrt(pow(x1-x2,2)+pow(y1-y2,2))
 			var distance0 = Math.sqrt(Math.pow(home.player.x - home.enemy0.x, 2) + Math.pow(home.player.y - home.enemy0.y, 2))
@@ -357,8 +357,9 @@ function getMCSymbolPrototype(symbol, nominalBounds, frameBounds) {
 			console.log(sessionStorage.getItem("totalGames"))
 			console.log(sessionStorage.getItem("results"))
 			
-			if(stats.length>=5){
-			
+		if(stats.length>=5){
+		clearInterval(myInterval);
+		c.Sound.volume = 0;
 		home.player.alpha = 0;
                 home.enemy0.alpha=0;
                 home.enemy1.alpha=0;
