@@ -357,6 +357,24 @@ function getMCSymbolPrototype(symbol, nominalBounds, frameBounds) {
 			console.log(sessionStorage.getItem("totalGames"))
 			console.log(sessionStorage.getItem("results"))
 			
+			if(stats.length>=5){
+			
+		home.player.alpha = 0;
+                home.enemy0.alpha=0;
+                home.enemy1.alpha=0;
+                home.enemy2.alpha=0;
+                home.enemy3.alpha=0;
+		
+		var fl_TF = new createjs.Text("שמור תוצאות כעת");
+		fl_TF.x = 190;
+		fl_TF.y = 200;
+		fl_TF.color = "#ff7700";
+		fl_TF.font = "20px Arial";
+		home.addChild(fl_TF);
+			
+		}
+		    
+		else{
 			home.player.alpha = 1;
 			home.player.x = 249
 			home.player.y = 253.95
@@ -394,6 +412,7 @@ function getMCSymbolPrototype(symbol, nominalBounds, frameBounds) {
 			speedMultiplier = 1;
 		
 			console.log("reset")
+		}
 		}
 		
 		function intersect(obj1, obj2) {
